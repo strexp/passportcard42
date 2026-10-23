@@ -1,0 +1,67 @@
+:root {
+  color-scheme: dark;
+  --bg: #0a0b0c;
+  --panel: #101214;
+  --line: rgba(255, 255, 255, 0.09);
+  --text: #f2efe8;
+  --muted: #8d8c86;
+  --accent: #d8f36a;
+  --font-ui: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-mono: 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace;
+  font-family: var(--font-ui);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% -10%, rgba(216, 243, 106, 0.05), transparent 32%), var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(216, 243, 106, 0.28);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: content-box;
+}
+
+@media (min-width: 1025px) {
+  body {
+    overflow: hidden;
+  }
+}
